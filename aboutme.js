@@ -26,6 +26,7 @@ if (responseTwo === "Y" || responseTwo === "YES") {
   alert("You are correct, I do not like wasabi AT ALL");
   numberCorrect++
 }
+console.log ("numberCorrect", numberCorrect);
 console.log("This is the respone to question 2" + responseTwo);
 
 //Third Question
@@ -38,6 +39,7 @@ if (responseThree === "Y" || responseThree === "YES") {
 } else {
   alert("I actually have 1 child");
 }
+console.log ("numberCorrect", numberCorrect);
 console.log("This is the respone to question 3" + responseThree);
 
 //Foruth Question
@@ -50,74 +52,78 @@ if (responseFour === "Y" || responseFour === "YES") {
 } else {
   alert("Of course I do, cooking is fun!");
 }
+console.log ("numberCorrect", numberCorrect);
 console.log("This is the respone to question 4" + responseFour);
 
 //Fifth Question
 var responseFive = prompt("Do I like Autum season?").toUpperCase();
 
-//Conditional Statement
+////Conditional Statement
 if (responseFive === "Y" || responseFive === "YES") {
   alert("Yes, It's my favorite season!");
   numberCorrect++
 } else {
   alert("I actually love Autum.");
 }
+console.log ("numberCorrect", numberCorrect);
 console.log("This is the respone to question 5" + responseFive);
 
 //Sixth Question
 
 //Conditional
-console.log("numberCorrect", numberCorrect);
-var numberGuess = parseInt(prompt("How many siblings do I have?"));
-console.log("Number Guess", numberGuess);
+var siblings = 6;
+console.log('siblings', siblings);
+var guess = parseInt(prompt("How many siblings do I have?"));
+console.log("guess", guess);
 
 //if too high
 var i = 0;
-while (numberGuess !== numberCorrect && i < 3) {
-  if (numberGuess > 6) {
-    numberGuess = parseInt(prompt("Your guess was too high, try again."));
+while (guess !== siblings && i < 3) {
+  (guess > 6) {
+    guess = parseInt(prompt("Your guess was too high, try again."));
     i++;
     console.log("i", i);
   }
   //if too low
-  if (numberGuess < 6 && i < 3) {
-    numberGuess = parseInt(prompt("Your guess was too low, try again."));
+  if (guess < 6 && i < 3) {
+    guess = parseInt(prompt("Your guess was too low, try again."));
     i++;
     console.log("i", i);
   }
 }
 //If right
-if (numberGuess === 6) {
-  alert("You're right! Congrat! I have " + numberCorrect + " siblings!");
+if (guess === 6) {
+  alert("You're right! Congrat! I have " + correctGuess + " siblings!");
   numberCorrect++
 }
 else { alert("Sorry, you are out of tries!");
+console.log ("numberCorrect", numberCorrect);
 }
 // Seventh Question
 var responseSeven = prompt("What are the names of all my siblings?").toUpperCase();
-var potentialResponse = [Tony, David, Steve, Kevin, Justen, Lily];
+var potentialResponse = ['Tony', 'David', 'Steve', 'Kevin', 'Justen', 'Lily'];
 var guesses = 0;
-var isThisCorrect = false;
+var answer = false;
 
-while (guesses < 5 && isThisCorrect === false){
+while (guesses < 5 && answer === false){
 
 for (var k = 0; k < potentialResponse.length; k++) {
   if (responeSeven === potentialResponse[k]) {
-    isThisCorrect = true;
+    answer = true;
   }
 }
-if (isThisCorrect === false) {
+if (answer === false) {
   responseSeven = prompt("Nope, try again.").toUpperCase();
 console.log("responeSeven", responeSeven);
 }
 guesses++;
 }
 
-if (isThisCorrect === true)
+if (answer === true)
 alert("Congratulations! You guessed correctly!");
 numberCorrect++
 
-if (isThisCorrect === false)
+if (answer === false)
 alert("Sorry you were wrong.");
 
 
@@ -126,4 +132,28 @@ alert("Sorry you were wrong.");
 if (numberCorrect <= 4 ) {
   alert("Sorry you don't even know me");
  } else { alert("Wow you know me pretty well!");
+ console.log ("numberCorrect", numberCorrect);
+}
+
+var questionSeven = prompt("Guess a state a state I have lived in").toLowerCase();
+console.log("user's answer to question seven.", questionSeven);
+var counter2 = 1;
+var stop = true;
+var answers=['vermont', 'massachusetts', 'missouri'];
+while(counter2 < 7 && stop == true){
+ for(var index = 0; index <= answers.length; index++){
+   if(questionSeven == answers[index]){
+     alert("You are correct!")
+     correctAnswer++;
+     stop = false;
+     break;
+   }
+ }
+ if(stop == false){
+   break;
+ }
+ else{
+ questionSeven = prompt("Try again.");
+ counter2++;
+ }
 }
