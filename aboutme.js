@@ -79,7 +79,7 @@ console.log("guess", guess);
 //if too high
 var i = 0;
 while (guess !== siblings && i < 3) {
-  (guess > 6) {
+  if (guess > 6) {
     guess = parseInt(prompt("Your guess was too high, try again."));
     i++;
     console.log("i", i);
@@ -93,7 +93,7 @@ while (guess !== siblings && i < 3) {
 }
 //If right
 if (guess === 6) {
-  alert("You're right! Congrat! I have " + correctGuess + " siblings!");
+  alert("You're right! Congrat! I have " + siblings + " siblings!");
   numberCorrect++
 }
 else { alert("Sorry, you are out of tries!");
@@ -113,6 +113,7 @@ for (var k = 0; k < potentialResponse.length; k++) {
   }
 }
 if (answer === false) {
+  
   responseSeven = prompt("Nope, try again.").toUpperCase();
 console.log("responeSeven", responeSeven);
 }
@@ -130,30 +131,7 @@ alert("Sorry you were wrong.");
 //Score Card
 
 if (numberCorrect <= 4 ) {
-  alert("Sorry you don't even know me");
+  alert("You don't know me very well.");
  } else { alert("Wow you know me pretty well!");
  console.log ("numberCorrect", numberCorrect);
-}
-
-var questionSeven = prompt("Guess a state a state I have lived in").toLowerCase();
-console.log("user's answer to question seven.", questionSeven);
-var counter2 = 1;
-var stop = true;
-var answers=['vermont', 'massachusetts', 'missouri'];
-while(counter2 < 7 && stop == true){
- for(var index = 0; index <= answers.length; index++){
-   if(questionSeven == answers[index]){
-     alert("You are correct!")
-     correctAnswer++;
-     stop = false;
-     break;
-   }
- }
- if(stop == false){
-   break;
- }
- else{
- questionSeven = prompt("Try again.");
- counter2++;
- }
 }

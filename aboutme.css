@@ -3,23 +3,35 @@ header {
     text-align-last: auto
 
 }
+
+nav {
+     color: blueviolet;
+}
+
 p {
     color: blueviolet;
         width: 300px;
         border: 5px solid blanchedalmond;
         padding: 25px;
         margin: 25px;
+        text align-self: center;
 }
 
 h1 {
     color: black;
     font-size: 20px;
+    color: blueviolet;
+    width: 300px;
+    border: 5px solid blanchedalmond;
+    padding: 25px;
+    margin: 25px;
 }
 
 img {
     display: inline-block;
-    width: 25%; // Show 4 images in a row normally
+    width: 30%; // Show 4 images in a row normally
     height: auto;
+    align-self: auto;
     align-self: auto;
 }
     
