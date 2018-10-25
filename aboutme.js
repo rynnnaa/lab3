@@ -85,7 +85,7 @@ while (guess !== siblings && i < 3) {
     console.log("i", i);
   }
   //if too low
-  if (guess < 6 && i < 3) {
+  if (guess !== siblings  && i < 3) {
     guess = parseInt(prompt("Your guess was too low, try again."));
     i++;
     console.log("i", i);
@@ -130,8 +130,8 @@ if (answer === false) {
 //Score Card
 
 if (numberCorrect <= 4) {
-  alert("You don't know me very well.");
+  alert("You got " + numberCorrect + " out of 7. You don't know me very well.");
 } else {
-  alert("Wow you know me pretty well!");
+  alert("Wow, you got " + numberCorrect + " out of 7. You know me pretty well!");
   console.log("numberCorrect", numberCorrect);
 }
