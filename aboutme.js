@@ -1,6 +1,8 @@
 'use strict';
 
 //TESTING
+//TESTIMG
+
 var numberCorrect = 0;
 //Alerting user to answer is only yes or no
 alert('Please respond to the following questions with YES or NO.');
