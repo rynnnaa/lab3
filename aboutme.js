@@ -1,8 +1,5 @@
 'use strict';
 
-//TESTING
-//TESTIMG
-
 var numberCorrect = 0;
 //Alerting user to answer is only yes or no
 alert('Please respond to the following questions with YES or NO.');
@@ -25,12 +22,14 @@ question(responseOne, ansOne);
 var responseTwo = prompt('Do I like wasabi?').toUpperCase();
 var ansTwo = 'NO';
 question(responseTwo, ansTwo);
+
 console.log('responseTwo', responseTwo);
 
 // //Third Question
 var responseThree = prompt('Do I have any children?').toUpperCase();
 var ansThree = 'YES';
 question(responseThree, ansThree);
+
 console.log('responseThree', responseThree);
 
 // //Foruth Question
@@ -43,6 +42,7 @@ console.log('responseFour', responseFour);
 var responseFive = prompt('Do I like Autum season?').toUpperCase();
 var ansFive = 'YES';
 question(responseFive, ansFive);
+
 console.log('responseFive', responseFive);
 
 // //Sixth Question
