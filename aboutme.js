@@ -1,4 +1,6 @@
 'use strict';
+
+//TESTING
 var numberCorrect = 0;
 //Alerting user to answer is only yes or no
 alert('Please respond to the following questions with YES or NO.');
@@ -53,13 +55,12 @@ function guessNumberSix() {
   var counter = 0;
   console.log('counter', counter);
   while (responseSix !== ansSix && counter < 3) {
-    if (responseSix < 6) {
+    if (responseSix > 6) {
       responseSix = parseInt(prompt('Your guess was too high. Try again'));
     } else if (responseSix < 6 && counter > 3) {
       responseSix = parseInt(prompt('Your guess was too low. Try again'));
     } else {
-      responseSix = parseInt(
-        prompt(responseSix + 'is not a number. Try again!')
+      responseSix = parseInt(prompt(responseSix + 'is not a number. Try again!')
       );
     }
 
