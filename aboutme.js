@@ -11,9 +11,7 @@ function question(varible1, varible2) {
     alert('wrong');
   }
 }
-//TESTING
-//Testing
-//TESTING
+
 //First Question
 var responseOne = prompt('Was I born in Seattle?').toUpperCase();
 var ansOne = 'NO';
