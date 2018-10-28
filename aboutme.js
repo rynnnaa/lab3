@@ -48,10 +48,9 @@ console.log('responseFive', responseFive);
 
 // //Sixth Question
 
-function guessNumberSix() {
+function yesNo6() {
   var ansSix = 6;
   console.log('ansSix' , ansSix);
-  
   var responseSix = parseInt(prompt('How many siblings do I have?'));
   console.log('responseSix', responseSix);
 
@@ -64,7 +63,7 @@ function guessNumberSix() {
     } else if (responseSix < 6 && counter > 3) {
       responseSix = parseInt(prompt('Your guess was too low. Try again'));
     } else {
-      responseSix = parseInt(prompt(responseSix + 'is not a number. Try again!')
+      responseSix = parseInt(prompt(responseSix + ' is not a number. Try again!')
       );
     }
 
@@ -81,10 +80,10 @@ function guessNumberSix() {
     alert('Sorry, that is incorrect. I have 6 siblings altogether.');
   }
 }
-guessNumberSix();
+yesNo6();
 
 // SEVENTH QUESTION
-function siblingGuess() {
+function yesNo7() {
   var numSiblings = ['tony', 'david', 'steve', 'lily', 'kevin', 'justen'];
   var responseSeven = prompt('Can you guess my siblings names?').toLowerCase();
   var correct = false;
@@ -108,7 +107,7 @@ function siblingGuess() {
     }
   } 
 }
-siblingGuess();
+yesNo7();
 
 //FINAL SCORE
 alert('Hey you got ' + numberCorrect + ' out of 7 questions correct.  Thanks for visiting my site!');
