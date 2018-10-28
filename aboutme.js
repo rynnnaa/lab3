@@ -50,7 +50,7 @@ console.log('responseFive', responseFive);
 
 function yesNo6() {
   var ansSix = 6;
-  console.log('ansSix' , ansSix);
+  console.log('ansSix', ansSix);
   var responseSix = parseInt(prompt('How many siblings do I have?'));
   console.log('responseSix', responseSix);
 
@@ -60,7 +60,7 @@ function yesNo6() {
   while (responseSix !== ansSix && counter < 3) {
     if (responseSix > 6) {
       responseSix = parseInt(prompt('Your guess was too high. Try again'));
-    } else if (responseSix < 6 && counter > 3) {
+    } else if (responseSix < 6 && counter < 3) {
       responseSix = parseInt(prompt('Your guess was too low. Try again'));
     } else {
       responseSix = parseInt(prompt(responseSix + ' is not a number. Try again!')
