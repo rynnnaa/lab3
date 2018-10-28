@@ -4,6 +4,7 @@ var numberCorrect = 0;
 //Alerting user to answer is only yes or no
 alert('Please respond to the following questions with YES or NO.');
 console.log('number correct', numberCorrect);
+
 function question(varible1, varible2) {
   if (varible1 === varible2) {
     alert('correct');
@@ -50,6 +51,7 @@ console.log('responseFive', responseFive);
 function guessNumberSix() {
   var ansSix = 6;
   console.log('ansSix' , ansSix);
+  
   var responseSix = parseInt(prompt('How many siblings do I have?'));
   console.log('responseSix', responseSix);
 
