@@ -1,11 +1,11 @@
 'use strict';
-
-var numberCorrect = 0;
-//Alerting user to answer is only yes or no
+var numberCorrect = 0; //Tallying all correct answers throughout Questionaire
+//Alerting user to answer only yes or no
 alert('Please respond to the following questions with YES or NO.');
 console.log('number correct', numberCorrect);
 
-function question(varible1, varible2) {
+//First Question
+function questionOne(varible1, varible2) {
   if (varible1 === varible2) {
     alert('correct');
     numberCorrect++;
@@ -14,36 +14,66 @@ function question(varible1, varible2) {
   }
 }
 
-//First Question
 var responseOne = prompt('Was I born in Seattle?').toUpperCase();
 var ansOne = 'NO';
-question(responseOne, ansOne);
+questionOne(responseOne, ansOne);
 
 //Second Question
+function questionTwo(varible1, varible2) {
+  if (varible1 === varible2) {
+    alert('correct');
+    numberCorrect++;
+  } else {
+    alert('wrong');
+  }
+}
+
 var responseTwo = prompt('Do I like wasabi?').toUpperCase();
 var ansTwo = 'NO';
-question(responseTwo, ansTwo);
-
+questionTwo(responseTwo, ansTwo);
 console.log('responseTwo', responseTwo);
 
 // //Third Question
+function questionThree(varible1, varible2) {
+  if (varible1 === varible2) {
+    alert('correct');
+    numberCorrect++;
+  } else {
+    alert('wrong');
+  }
+}
+
 var responseThree = prompt('Do I have any children?').toUpperCase();
 var ansThree = 'YES';
-question(responseThree, ansThree);
-
+questionThree(responseThree, ansThree);
 console.log('responseThree', responseThree);
 
 // //Foruth Question
+function questionFour(varible1, varible2) {
+  if (varible1 === varible2) {
+    alert('correct');
+    numberCorrect++;
+  } else {
+    alert('wrong');
+  }
+}
 var responseFour = prompt('Do I like to cook').toUpperCase();
 var ansFour = 'YES';
-question(responseFour, ansFour);
+questionFour(responseFour, ansFour);
 console.log('responseFour', responseFour);
 
 // //Fifth Question
+function questionFive(varible1, varible2) {
+  if (varible1 === varible2) {
+    alert('correct');
+    numberCorrect++;
+  } else {
+    alert('wrong');
+  }
+}
 var responseFive = prompt('Do I like Autum season?').toUpperCase();
 var ansFive = 'YES';
-question(responseFive, ansFive);
-
+questionFive(responseFive, ansFive);
 console.log('responseFive', responseFive);
 
 // //Sixth Question
@@ -110,4 +140,4 @@ function yesNo7() {
 yesNo7();
 
 //FINAL SCORE
-alert('Hey you got ' + numberCorrect + ' out of 7 questions correct.  Thanks for visiting my site!');
+alert('Hey you got ' + numberCorrect + ' out of 7 questions correct.  Thanks for visiting my site!'); 
