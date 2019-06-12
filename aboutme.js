@@ -139,5 +139,18 @@ function yesNo7() {
 }
 yesNo7();
 
+function yesNo8() {
+  var favoriteColor = 'purple';
+  var response = prompt ('What is my favorite color?');
+
+  if (response !== favoriteColor) {
+    return false;
+  }
+  else {
+    return true;
+  }
+}
+yesNo8();
+
 //FINAL SCORE
 alert('Hey you got ' + numberCorrect + ' out of 7 questions correct.  Thanks for visiting my site!'); 
